@@ -14,7 +14,7 @@ namespace caffe {
 /**
  * @brief Computes the Negative Logarith of Normal Distribution probability @f$
  *          E = \frac{1}{2N} \sum\limits_{n=1}^N \left(
- *          \ln\left(e^{\hat{\sigma}_n} + \epsilon \right) + 
+ *          \ln\left(e^{\hat{\sigma}_n} + \epsilon \right) +
  *          \frac{\left( \hat{y}_n - y_n \right)^2}{e^{\hat{\sigma}_n} + \epsilon}
  *          \right) + \frac{\ln(2\pi)}{2} @f$ for real-valued regression tasks.
  *
@@ -29,7 +29,7 @@ namespace caffe {
  *   -# @f$ (1 \times 1 \times 1 \times 1) @f$
  *      the computed Euclidean loss: @f$ E =
  *      \frac{1}{2N} \sum\limits_{n=1}^N \left(
- *      \ln\left(e^{\hat{\sigma}_n} + \epsilon \right) + 
+ *      \ln\left(e^{\hat{\sigma}_n} + \epsilon \right) +
  *      \frac{\left( \hat{y}_n - y_n \right)^2}{e^{\hat{\sigma}_n} + \epsilon}
  *      \right) + \frac{\ln(2\pi)}{2}
  *      @f$
